@@ -18,7 +18,7 @@ public class TreasureMap {
 	static String NO="NO";
 	public static void main(String[] args) {
 		String s = "group.jobbole.com";
-		String t = "x";
+		String t = "oj";
 		
 		System.out.println(isTreasureMap(s, t));
 	}
@@ -40,7 +40,7 @@ public class TreasureMap {
 		int sIndex = 0;
 		for (int i = 0; i < t.length(); i++) {
 			tmp = t.charAt(i);
-			sIndex = sbf.indexOf(tmp+"");
+			sIndex = sbf.indexOf(tmp+"", sIndex);
 			if(sIndex<0){
 				return NO;
 			}
